@@ -1,0 +1,9 @@
+F:\cs50\work\change-IP\change-IP\bin\Debug\change-IP.exe.config
+F:\cs50\work\change-IP\change-IP\bin\Debug\change-IP.exe
+F:\cs50\work\change-IP\change-IP\bin\Debug\change-IP.pdb
+F:\cs50\work\change-IP\change-IP\obj\Debug\change-IP.csprojResolveAssemblyReference.cache
+F:\cs50\work\change-IP\change-IP\obj\Debug\change_IP.Form1.resources
+F:\cs50\work\change-IP\change-IP\obj\Debug\change_IP.Properties.Resources.resources
+F:\cs50\work\change-IP\change-IP\obj\Debug\change-IP.csproj.GenerateResource.Cache
+F:\cs50\work\change-IP\change-IP\obj\Debug\change-IP.exe
+F:\cs50\work\change-IP\change-IP\obj\Debug\change-IP.pdb
