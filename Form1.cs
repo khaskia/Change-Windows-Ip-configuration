@@ -39,7 +39,8 @@ namespace change_IP {
             cmd.StandardInput.Flush();
             cmd.StandardInput.Close();
             cmd.WaitForExit();
-            MessageBox.Show(cmd.StandardOutput.ReadToEnd());
+           // MessageBox.Show(cmd.StandardOutput.ReadToEnd());
+            //lblState.Text = cmd.StandardOutput.ReadToEnd();
 
         }
 
@@ -60,9 +61,9 @@ namespace change_IP {
 
             Properties.Settings.Default.NetworkName = networkname;
             Properties.Settings.Default.IpAddress = ipaddress;
-             Properties.Settings.Default.GetWay = getway;
-            MessageBox.Show("Static is Done");
-
+            Properties.Settings.Default.GetWay = getway;
+            //MessageBox.Show("Static is Done");
+            lblState.Text = "Static Is Done if it's not please Run As Adminstrator";
         }
 
        
@@ -76,13 +77,15 @@ namespace change_IP {
         private void button2_Click(object sender, EventArgs e)
         {
            executeCommands("netsh interface ipv4 set address name=\"Wi-Fi\" source=dhcp");
-           MessageBox.Show("Dynamic is Done");
+           //MessageBox.Show("Dynamic is Done");
+           lblState.Text = "Dynamic Is Done if it's not please Run As Adminstrator";
+           // listBox1.Items.Add("Dynamic Is Done");
 
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://192.168.3.1");
+            Process.Start("http://"+textBox2.Text);
         }
     }
 }

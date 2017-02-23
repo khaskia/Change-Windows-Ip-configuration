@@ -32,6 +32,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lblState = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -130,12 +131,23 @@
             this.linkLabel1.Text = "Open Router Configuration";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // lblState
+            // 
+            this.lblState.AutoSize = true;
+            this.lblState.ForeColor = System.Drawing.Color.Green;
+            this.lblState.Location = new System.Drawing.Point(13, 308);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(33, 13);
+            this.lblState.TabIndex = 9;
+            this.lblState.Text = "State";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(405, 419);
+            this.Controls.Add(this.lblState);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -163,6 +175,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label lblState;
     }
 }
 
